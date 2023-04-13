@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Attendant Controller</title>
+</head>
+<body>
+<h1>DVDs</h1>
+<form method="post" th:action="@{/api/dvd}">
+  <label>
+    Titre: <input type="text" name="titre" required>
+  </label><br>
+  <label>
+    Auteur: <input type="text" name="auteur" required>
+  </label><br>
+  <label>
+    Année: <input type="number" name="annee" required>
+  </label><br>
+  <label>
+    Nombre de copies: <input type="number" name="nbCopies" required>
+  </label><br>
+  <label>
+    Durée: <input type="number" name="duree" required>
+  </label><br>
+  <input type="submit" value="Ajouter DVD">
+</form>
+
+<h1>CDs</h1>
+<form method="post" th:action="@{/api/cd}">
+  <label>
+    Titre: <input type="text" name="titre" required>
+  </label><br>
+  <label>
+    Auteur: <input type="text" name="auteur" required>
+  </label><br>
+  <label>
+    Année: <input type="number" name="annee" required>
+  </label><br>
+  <label>
+    Nombre de copies: <input type="number" name="nbCopies" required>
+  </label><br>
+  <label>
+    Durée: <input type="number" name="duree" required>
+  </label><br>
+  <input type="submit" value="Ajouter CD">
+</form>
+
+<h1>Livres</h1>
+<form method="post" th:action="@{/api/livre}">
+  <label>
+    Titre: <input type="text" name="titre" required>
+  </label><br>
+  <label>
+    Auteur: <input type="text" name="auteur" required>
+  </label><br>
+  <label>
+    Année: <input type="number" name="annee" required>
+  </label><br>
+  <label>
+    Nombre de copies: <input type="number" name="nbCopies" required>
+  </label><br>
+  <label>
+    Editeur: <input type="text" name="editeur" required>
+  </label><br>
+  <label>
+    Nombre de pages: <input type="number" name="nbPages" required>
+  </label><br>
+  <label>
+    Genre: <input type="text" name="genre" required>
+  </label><br>
+  <input type="submit" value="Ajouter livre">
+</form>
+
+<h1>Clients</h1>
+<form method="post" th:action="@{/api/client}">
+  <label>
+    Nom: <input type="text" name="name" required>
+  </label><br>
+  <label>
+    Mot de passe: <input type="password" name="password" required>
+  </label><br>
+  <input type="submit" value="Ajouter client">
+</form>
